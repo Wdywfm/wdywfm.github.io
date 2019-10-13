@@ -1,5 +1,7 @@
 <html>
     <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
         <style>
             body {
                 text-align: center;
@@ -44,7 +46,28 @@
                 font-size: 16px;
             }  background-color: #a3d5d3;
         </style>
-        <script type="text/javascript">
+    </head>
+    <body>
+        <h1 class="countdown-title">До диплома осталось:</h1>
+        <div id="countdown" class="countdown">
+            <div class="countdown-number">
+                <span class="days countdown-time"></span>
+                <span class="countdown-text">Дней</span>
+            </div>
+            <div class="countdown-number">
+                <span class="hours countdown-time"></span>
+                <span class="countdown-text">Часов</span>
+            </div>
+            <div class="countdown-number">
+                <span class="minutes countdown-time"></span>
+                <span class="countdown-text">Минут</span>
+            </div>
+            <div class="countdown-number">
+                <span class="seconds countdown-time"></span>
+                <span class="countdown-text">Секунд</span>
+            </div>
+        </div>
+    <script>
             function getTimeRemaining(endtime) {
                 var t = Date.parse(endtime) - Date.parse(new Date());
                 var seconds = Math.floor((t / 1000) % 60);
@@ -87,26 +110,5 @@
             var deadline="July 31 2020 00:00:00 GMT+0300"
             initializeClock('countdown', deadline);
         </script>
-    </head>
-    <body>
-        <h1 class="countdown-title">До диплома осталось:</h1>
-        <div id="countdown" class="countdown">
-            <div class="countdown-number">
-                <span class="days countdown-time"></span>
-                <span class="countdown-text">Дней</span>
-            </div>
-            <div class="countdown-number">
-                <span class="hours countdown-time"></span>
-                <span class="countdown-text">Часов</span>
-            </div>
-            <div class="countdown-number">
-                <span class="minutes countdown-time"></span>
-                <span class="countdown-text">Минут</span>
-            </div>
-            <div class="countdown-number">
-                <span class="seconds countdown-time"></span>
-                <span class="countdown-text">Секунд</span>
-            </div>
-        </div>
     </body>
 </html>
